@@ -1,13 +1,13 @@
 import './App.css';
 import { Pulse } from './components/pulse';
-import { HLIs } from './components/initiatives'
+import { Slideshow} from './components/slideshow'
 
 function App() {
   return (
     <>
-      <h1>Dashboard</h1>
+      <h3>Dashboard</h3>
       <div className='container'>
-        <HLIs />
+        <Slideshow/>
         <Pulse />
       </div>
     </>
