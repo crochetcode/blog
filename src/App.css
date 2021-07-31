@@ -1,10 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 .App {
   text-align: center;
 }
 
+body {
+  background-color: black;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .App-logo {
-  height: 40vmin;
+  height: 25vmin;
   pointer-events: none;
+  margin-top: 25px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +28,12 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +43,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  /* font-family: 'Times New Roman', Times, serif; */
+  font-family: 'Comfortaa', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: 'Comfortaa', cursive;
+}
+
+.bracket {
+  font-size: 10rem;
+  font-family: monospace;
 }
