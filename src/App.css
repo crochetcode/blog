@@ -7,15 +7,6 @@ body {
     justify-content: center;
 }
 
-.panel {
-    border: 1px solid gray;
-    width: 175px;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 7px;
-    background: gainsboro;
-}
-
 h2, ul, p {
     margin: 10px;
 }
@@ -36,8 +27,8 @@ li, li p {
 }
 
 .slideshow-container {
-    width: 65vw;
-    height: 80vh;
+    width: 75vw;
+    height: 85vh;
     margin: 5px;
     border: 1px solid gray;
     display: flex;

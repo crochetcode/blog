@@ -1,14 +1,14 @@
 export const slides = [
     {
-        heading: 'slideshow 1',
-        body: (<p>add arrows, panels</p>)
+        heading: 'slide 1',
+        body: (<p>insert text</p>)
     },
     {
-        heading: 'slideshow 2',
-        body: (<p>add arrows, panels</p>)
+        heading: 'slide 2',
+        body: (<p>insert text</p>)
     },
     {
-        heading: 'slideshow 3',
-        body: (<p>add arrows, panels</p>)
+        heading: 'slide 3',
+        body: (<p>insert text</p>)
     }
 ]
