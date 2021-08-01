@@ -7,15 +7,6 @@ body {
     justify-content: center;
 }
 
-.panel {
-    border: 1px solid gray;
-    width: 200px;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 7px;
-    background: gainsboro;
-}
-
 h2, ul, p {
     margin: 10px;
 }
@@ -29,4 +20,40 @@ li, li p {
     align-items: center;
     padding: 0;
     margin: 0;
+}
+
+.slideshow-frame {
+    padding: 5px;
+}
+
+.slideshow-container {
+    width: 75vw;
+    height: 85vh;
+    margin: 5px;
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 7px;
+    justify-content: space-between;
+
+}
+
+.arrow {
+    width: 50px;
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-left {
+    border-radius: 7px 0 0 7px;
+}
+
+.arrow-right {
+    border-radius: 0 7px 7px 0;
+}
+
+.arrow:hover {
+    background: gray;
+    cursor: pointer;
 }
