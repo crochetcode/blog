@@ -27,7 +27,6 @@ export const Slideshow = () => {
         <div className='slideshow-container'>
             <div className='arrow arrow-left' onClick={() => changePanelIndex('left')}>{'<-'}</div>
             <div className='slideshow-frame'>
-                <h2>{slides[panelIndex].heading}</h2>
                 {slides[panelIndex].body}
             </div>
             <div className='arrow arrow-right' onClick={() => changePanelIndex('right')}>{'->'}</div>
