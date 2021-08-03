@@ -9,8 +9,13 @@ body {
     flex-wrap: wrap;
 }
 
-h2, ul, p {
+h1, h2, ul, p {
     margin: 10px;
+}
+
+h2 {
+    color: gray;
+    margin-bottom: 0;
 }
 
 p {
@@ -83,6 +88,7 @@ li, li p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: gray;
 }
 
 .box-container {
@@ -93,17 +99,21 @@ li, li p {
     height: 25px;
     width: 25px;
     background: lightgreen;
-    margin: 1px;
+    margin: 2px;
 }
 
 .big-box {
     height: 50px;
     width: 50px;
-    background: lightsalmon;
+    background: lightgreen;
 }
 
 .gray {
     background: lightgray;
+}
+
+.yellow {
+    background: lightgoldenrodyellow;
 }
 
 .italic {
