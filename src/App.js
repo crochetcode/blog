@@ -4,7 +4,7 @@ import { Slideshow} from './components/slideshow'
 function App() {
   return (
     <>
-      <h3>dashboard</h3>
+      <h3>August: Iowa State Fair</h3>
       <div className='container'>
         <Slideshow/>
       </div>
