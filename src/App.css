@@ -1,5 +1,7 @@
 body {
     text-align: center;
+    background: radial-gradient(gray, black);
+    color: white;
 }
 
 .container {
@@ -13,8 +15,13 @@ h1, h2, ul, p {
     margin: 10px;
 }
 
+h1 {
+    color: hotpink;
+}
+
 h2 {
-    color: gray;
+    /* color: gray;
+    color: hotpink; */
     margin-bottom: 0;
 }
 
@@ -46,17 +53,22 @@ li, li p {
 
 .slideshow-frame {
     padding: 5px;
+    height: 50%;
+    /* border: solid yellow; */
+    margin: 0 auto;
 }
 
 .slideshow-container {
     width: 75vw;
     height: 85vh;
     margin: 5px;
-    border: 1px solid gray;
+    border: 1px solid gray;  
     display: flex;
     border-radius: 7px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
     align-items: center;
+    background: black;
 }
 
 .arrow {
