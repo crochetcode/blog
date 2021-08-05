@@ -2,13 +2,20 @@ export const slides = [
     {
         body: (
             <>
-                <h1>Initiatives</h1>
-                <h2>Work: get a promotion</h2>
-                <h2>Gym: change body composition</h2>
-                <hr></hr>
-                <h2>Coding: make progress on apps</h2>
-                <h2>Budget: pay off mortgage, build retirement</h2>
+                <h1>Work</h1>
+                <h2>I would like to be on track for a promotion.</h2>
+                <h2>Be engaged during working hours.</h2>
             </>
         )
     },
+    {
+        body: (
+            <>
+                <h1>Gym</h1>
+                <h2>Noticeably different body composition.</h2>
+                <h2>Better posture.</h2>
+                <h2>I like feeling confident about my body.</h2>
+            </>
+        )
+    }
 ]

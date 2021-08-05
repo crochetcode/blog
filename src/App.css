@@ -20,8 +20,6 @@ h1 {
 }
 
 h2 {
-    /* color: gray;
-    color: hotpink; */
     margin-bottom: 0;
 }
 
@@ -52,7 +50,7 @@ li, li p {
 }
 
 .slideshow-frame {
-    padding: 5px;
+    padding: 100px;
     height: 50%;
     /* border: solid yellow; */
     margin: 0 auto;
@@ -62,7 +60,7 @@ li, li p {
     width: 75vw;
     height: 85vh;
     margin: 5px;
-    border: 1px solid gray;  
+    /* border: 1px solid gray;   */
     display: flex;
     border-radius: 7px;
     /* justify-content: space-between; */
@@ -74,10 +72,14 @@ li, li p {
 .arrow {
     width: 100px;
     height: 100%;
-    background: lightgray;
+    background: rgba(255, 255, 255, .85);
+    background: hotpink;
+    background: gray;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    font-size: 3.5rem;
 }
 
 .arrow-left {
@@ -91,6 +93,8 @@ li, li p {
 .arrow:hover {
     background: gray;
     cursor: pointer;
+    box-sizing: border-box;
+    color: hotpink;
 }
 
 .small-box, .big-box {

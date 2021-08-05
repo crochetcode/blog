@@ -25,11 +25,11 @@ export const Slideshow = () => {
 
     return (
         <div className='slideshow-container'>
-            {slides.length > 1 && <div className='arrow arrow-left' onClick={() => changePanelIndex('left')}>{'<-'}</div>}
+            {slides.length > 1 && <div className='arrow arrow-left' onClick={() => changePanelIndex('left')}>{'<'}</div>}
             <div className='slideshow-frame'>
                 {slides[panelIndex].body}
             </div>
-            {slides.length > 1 && <div className='arrow arrow-right' onClick={() => changePanelIndex('right')}>{'->'}</div>}
+            {slides.length > 1 && <div className='arrow arrow-right' onClick={() => changePanelIndex('right')}>{'>'}</div>}
         </div>
     )
 }
