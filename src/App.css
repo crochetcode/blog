@@ -52,7 +52,6 @@ li, li p {
 .slideshow-frame {
     padding: 100px;
     height: 50%;
-    /* border: solid yellow; */
     margin: 0 auto;
 }
 
@@ -60,10 +59,8 @@ li, li p {
     width: 75vw;
     height: 85vh;
     margin: 5px;
-    /* border: 1px solid gray;   */
     display: flex;
     border-radius: 7px;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
     background: black;
