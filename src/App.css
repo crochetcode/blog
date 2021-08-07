@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: black;
+  background: black;
   color: white;
 }
 
@@ -63,4 +63,20 @@ h2 {
   font-size: 10rem;
   font-family: monospace;
   color: hotpink;
+}
+
+@media (max-width: 600px) {
+  .bracket {
+    font-size: 7.5rem;
+    font-family: monospace;
+    color: hotpink;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
 }
