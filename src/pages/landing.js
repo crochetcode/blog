@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Landing = () => {
     return (
         <div className='flex panel'>
-            <img src={logo} className="logo" alt="logo" />
+            <img src={logo} className='logo' alt='logo'/>
             <div className='flex-col'>
                 <div className='flex'>
                     <h1>Doily.Dev</h1>
