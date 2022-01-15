@@ -4,13 +4,13 @@ import './App.css';
 function App() {
   return (
     <div className='main flex-col'>
-      <header className='flex'>
+      <div className='flex panel'>
         <img src={logo} className="logo" alt="logo" />
         <div className='flex-col'>
-          <h2>Doily.Dev</h2>
+          <h1>Doily.Dev</h1>
           <button>coming soon</button>
         </div>
-      </header>
+      </div>
     </div>
   );
 }
