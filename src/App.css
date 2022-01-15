@@ -47,8 +47,8 @@ button {
 }
 
 button:hover {
-  /* background: gray;
-  cursor: pointer; */
+  background: gray;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
