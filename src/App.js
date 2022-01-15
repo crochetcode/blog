@@ -1,16 +1,16 @@
-import logo from './logo.png';
+
 import './App.css';
+import { Home } from './pages/home';
+import { Landing } from './pages/landing';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='main flex-col'>
-      <div className='flex panel'>
-        <img src={logo} className="logo" alt="logo" />
-        <div className='flex-col'>
-          <h1>Doily.Dev</h1>
-          <button>coming soon</button>
-        </div>
-      </div>
+    <div className='main flex'>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/home' element={<Home />} />
+      </Routes>
     </div>
   );
 }
