@@ -1,39 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 .App {
   text-align: center;
 }
 
 body {
-  background: black;
-  color: white;
+  background: gray;
 }
 
-.flex {
+.flex, .flex-col {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.App-logo {
-  height: 25vmin;
-  pointer-events: none;
-  margin-top: 25px;
+.flex-col {
+  flex-direction: column;
+}
+
+header {
+  padding: 65px;
+  border-radius: 75px;
+  background: white;
+  box-shadow: 2px 2px 2px 7px black;
+}
+
+.logo {
+  height: 35vmin;
+  margin: 25px;
+  margin-left: 0;
+}
+
+.logo:hover {
+  transform: scale(1.2);
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  min-height: 90vh;
+.main {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
 }
 
 @keyframes App-logo-spin {
@@ -51,32 +64,60 @@ h1, h2 {
 
 h1 {
   font-size: 5rem;
-  font-family: 'Comfortaa', cursive;
 }
 
 h2 {
-  font-size: 3rem;
-  font-family: 'Comfortaa', cursive;
+  font-size: 7rem;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .bracket {
-  font-size: 10rem;
-  font-family: monospace;
+  font-size: 12rem;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  /* font-family: 'Shadows Into Light', cursive; */
+  font-family: 'Special Elite', cursive;
   color: hotpink;
 }
 
+button {
+  font-family: monospace;
+  background: hotpink;
+  font-size: 2rem;
+  border-radius: 50px;
+  padding: 10px 15px;
+  width: 300px;
+}
+
+button:hover {
+  background: gray;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
-  .bracket {
-    font-size: 7.5rem;
-    font-family: monospace;
-    color: hotpink;
+  .flex {
+    flex-direction: column;
   }
 
-  h1 {
-    font-size: 3.5rem;
+  img {
+    height: 50px;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  header {
+    padding: 60px;
+    height: 50vh;
+    width: 60vw;
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 5rem;
+  }
+
+  button {
+    width: 200px;
+    font-size: 2rem;
   }
 }
