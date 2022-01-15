@@ -6,10 +6,12 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <Routes>
-      <Route path='/' element={<Landing/>}/>
-      <Route path='/home' element={<Home/>}/>
-    </Routes>
+    <div className='main flex'>
+      <Routes>
+        <Route path='/' element={<Landing />} />
+        <Route path='/home' element={<Home />} />
+      </Routes>
+    </div>
   );
 }
 
