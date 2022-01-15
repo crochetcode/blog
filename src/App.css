@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-.App {
-  text-align: center;
-}
-
 body {
   background: gray;
 }
@@ -16,6 +12,10 @@ body {
 
 .flex-col {
   flex-direction: column;
+}
+
+.main {
+  min-height: 100vh;
 }
 
 header {
@@ -31,52 +31,10 @@ header {
   margin-left: 0;
 }
 
-.logo:hover {
-  transform: scale(1.2);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.main {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-h1, h2 {
-  margin: 0;
-}
-
-h1 {
-  font-size: 5rem;
-}
-
 h2 {
+  margin: 0;
   font-size: 7rem;
   font-family: 'Shadows Into Light', cursive;
-}
-
-.bracket {
-  font-size: 12rem;
-  font-family: 'Arial Narrow', Arial, sans-serif;
-  /* font-family: 'Shadows Into Light', cursive; */
-  font-family: 'Special Elite', cursive;
-  color: hotpink;
 }
 
 button {
@@ -89,8 +47,8 @@ button {
 }
 
 button:hover {
-  background: gray;
-  cursor: pointer;
+  /* background: gray;
+  cursor: pointer; */
 }
 
 @media (max-width: 600px) {
@@ -109,7 +67,8 @@ button:hover {
   header {
     padding: 60px;
     height: 50vh;
-    width: 60vw;
+    width: 50vw;
+    box-shadow: 1px 1px 1px 3px black;
   }
 
   h2 {
@@ -118,6 +77,21 @@ button:hover {
 
   button {
     width: 200px;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
