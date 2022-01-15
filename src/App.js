@@ -3,17 +3,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className='flex'>
-          <h1 className='bracket'>{'{'}</h1>
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className='bracket'>{'}'}</h1>
+    <div className='main flex-col'>
+      <div className='flex panel'>
+        <img src={logo} className="logo" alt="logo" />
+        <div className='flex-col'>
+          <h1>Doily.Dev</h1>
+          <button>coming soon</button>
         </div>
-        <br/>
-        <h1>Fred Davison</h1>
-        <h2>Web Developer</h2>
-      </header>
+      </div>
     </div>
   );
 }
