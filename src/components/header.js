@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <header className='flex spread'>
             <nav>
-                <Link to='/home'>
+                <Link to='/'>
                     <img src={logo} alt='logo' className='nav-logo' />
                 </Link>
                 <h2>Doily.Dev</h2>

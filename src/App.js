@@ -8,8 +8,8 @@ function App() {
   return (
     <div className='main flex'>
       <Routes>
-        <Route path='/' element={<Landing />} />
-        <Route path='/home' element={<Home />} />
+        <Route path='/welcome' element={<Landing />} />
+        <Route path='/*' element={<Home />} />
       </Routes>
     </div>
   );
