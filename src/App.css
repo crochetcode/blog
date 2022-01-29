@@ -60,7 +60,7 @@ nav {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 footer {
@@ -105,13 +105,18 @@ p {
 }
 
 button {
-  font-family: monospace;
+  font-family: sans-serif;
   background: hotpink;
   font-size: 1.5rem;
   border-radius: 50px;
-  padding: 7px 12px;
+  padding: 10px 25px;
   width: 250px;
-  margin: 10px 0;
+  margin: 5px 0;
+}
+
+.text-align-start {
+  text-align: start;
+  padding: 10px 0 10px 40px;
 }
 
 button:hover {
