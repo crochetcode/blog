@@ -8,13 +8,15 @@ export const Links = () => {
                 <a href='https://www.instagram.com/doily.dev' target='_blank' rel='noreferrer'>
                     <button className='text-align-start'>
                         <i class="fab fa-instagram"></i>
-                        &nbsp;instagram
+                        &nbsp;instagram&nbsp;
+                        <i class="fas fa-external-link-alt"></i>
                     </button>
                 </a>
                 <a href='https://github.com/crochetcode' target='_blank' rel='noreferrer'>
                     <button className='text-align-start'>
                         <i class="fab fa-github"></i>
-                        &nbsp;github
+                        &nbsp;github&nbsp;
+                        <i class="fas fa-external-link-alt"></i>
                     </button>
                 </a>
                 <Link to='/spotify'>

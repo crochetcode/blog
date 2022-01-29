@@ -133,9 +133,12 @@ section {
   margin-right: 50px;
   width: 500px;
   background: hotpink;
-  padding: 25px;
+  padding: 50px;
   height: 380px;
   box-sizing: border-box;
+  border-radius: 50px;
+  background: white;
+  box-shadow: 1px 1px 1px 5px black;
 }
 
 @media (max-width: 600px) {
@@ -158,7 +161,7 @@ section {
   .panel {
     padding: 60px;
     width: 50vw;
-    box-shadow: 1px 1px 1px 3px black;
+    box-shadow: 1px 1px 1px 3px hotpink;
   }
 
   h1 {
@@ -166,7 +169,7 @@ section {
   }
 
   button {
-    width: 200px;
+    width: 250px;
     font-size: 1.5rem;
   }
 
@@ -176,6 +179,15 @@ section {
     width: 100vw;
     height: auto;
     background: black;
+    color: white;
+  }
+
+  li {
+      margin: 10px 0;
+      color: gray;
+  }
+
+  strong {
     color: white;
   }
 }
