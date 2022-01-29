@@ -102,6 +102,11 @@ h2 {
 
 p {
   margin: 0;
+  font-family: sans-serif;
+}
+
+li {
+  margin: 10px 0;
 }
 
 button {
@@ -124,9 +129,22 @@ button:hover {
   cursor: pointer;
 }
 
+section {
+  margin-right: 50px;
+  width: 500px;
+  background: hotpink;
+  padding: 25px;
+  height: 380px;
+  box-sizing: border-box;
+}
+
 @media (max-width: 600px) {
   .flex {
     flex-direction: column;
+  }
+
+  .main {
+    background: black;
   }
 
   img {
@@ -150,6 +168,15 @@ button:hover {
   button {
     width: 200px;
     font-size: 1.5rem;
+  }
+
+  section {
+    margin: 0;
+    padding: 5px 20px;
+    width: 100vw;
+    height: auto;
+    background: black;
+    color: white;
   }
 }
 

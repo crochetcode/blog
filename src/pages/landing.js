@@ -9,7 +9,7 @@ export const Landing = () => {
                 <div className='flex'>
                     <h1>Doily.Dev</h1>
                 </div>
-                <Link to='/home'>
+                <Link to='/'>
                     <button>enter</button>
                 </Link>
             </div>
