@@ -1,18 +1,9 @@
-import { Routes, Route } from "react-router-dom"
-import { Footer } from "../components/footer"
-import { Header } from "../components/header"
-import { Links } from './links';
-import { Spotify } from "./spotify";
+import logo from '../logo.png';
 
 export const Home = () => {
     return (
-        <div className='main flex'>
-            <Header />
-            <Routes>
-                <Route exact path='/' element={<Links />} />
-                <Route path='/spotify' element={<Spotify />} />
-            </Routes>
-            <Footer />
+        <div className='flex panel'>
+            <img src={logo} className='logo' alt='logo' />
         </div>
     )
 }

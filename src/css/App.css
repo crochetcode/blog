@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+
+body {
+  background: black;
+}
+
+.flex, .flex-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.spread {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  min-height: 100vh;
+  background: gray;
+}
+
+.panel {
+  padding: 50px;
+  border-radius: 75px;
+  background: white;
+  box-shadow: 2px 2px 2px 7px black;
+  margin: 25px;
+}
+
+.logo {
+  height: 35vmin;
+  margin: 25px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 0;
+}
+
+h3 {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.mobile {
+  display: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
