@@ -9,8 +9,8 @@ export const Home = () => {
         <div className='main flex'>
             <Header />
             <Routes>
-                <Route exact path='/' element={<Links />} />
-                <Route path='/spotify' element={<Spotify />} />
+                <Route path='*' element={<Links />} />
+                <Route path='/spotify/*' element={<Spotify />} />
             </Routes>
             <Footer />
         </div>
