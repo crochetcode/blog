@@ -1,5 +1,7 @@
 
-import './App.css';
+import './css/App.css';
+import './css/header.css';
+import './css/phone.css';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from './pages/home';
 import { Header } from './components/header';
