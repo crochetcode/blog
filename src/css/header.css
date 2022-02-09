@@ -27,10 +27,8 @@ header, footer {
   }
 
   .nav-logo {
-    background: white;
     height: 35px;
     margin-right: 15px;
-    border-radius: 50%;
   }
   
   nav i {
