@@ -2,15 +2,12 @@ import logo from '../assets/thread.png';
 
 export const Home = () => {
     return (
-        <div className='flex-col main spread'>
-            <div>
-                <div>
-                    <h1>DOILY</h1>
+        <div className='flex-col main'>
+            <div className='flex-col'>
+                <div className='flex'>
+                    <h1>DOILY DEV</h1>
                 </div>
-                <div className='flex spread'>
-                    <h1>DEV</h1>
-                    <img src={logo} className='logo' alt='logo' />
-                </div>
+                <img src={logo} className='logo' alt='logo' />
             </div>
             <div>
                 <a href='https://github.com/crochetcode' target='_blank' rel='noreferrer'>
