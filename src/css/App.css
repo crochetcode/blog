@@ -2,6 +2,7 @@
 
 body {
   background: black;
+  color: white;
 }
 
 .flex, .flex-col {
@@ -25,42 +26,51 @@ a {
 }
 
 .main {
-  min-height: 100vh;
-  background: gray;
+  width: 325px;
+  height: 100vh;
+  padding: 175px 0;
+  box-sizing: border-box;
 }
 
-.panel {
-  padding: 50px;
-  border-radius: 75px;
-  background: white;
-  box-shadow: 2px 2px 2px 7px black;
-  margin: 25px;
+.main div {
+  text-align: start;
+  width: 300px;
 }
 
 .logo {
-  height: 50vmin;
-  margin: 25px;
-}
-
-h1, h2, h3 {
-  margin: 0;
+  height: 5.5rem;
+  margin-right: 10px;
 }
 
 h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 3rem;
-  padding: 0;
-}
-
-h3 {
+  margin: 0;
+  font-size: 5.5rem;
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.mobile {
-  display: none;
+button {
+  font-size: 1.5rem;
+  padding: 12px 35px;
+  border: solid white;
+  border-radius: 22px;
+  background: white;
+  width: 300px;
+  height: 4.5rem;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+button i {
+  font-size: 3.25rem;
+  padding-right: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: none;
+  color: white;
 }
 
 @keyframes App-logo-spin {
