@@ -44,13 +44,13 @@ a {
 
 h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.95rem;
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
 button {
   font-size: 1.5rem;
-  padding: 7px 50px;
+  padding: 4px 50px;
   border: solid white;
   border-radius: 22px;
   background: white;
