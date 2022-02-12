@@ -16,6 +16,9 @@ export const Home = () => {
                 <a href='https://www.instagram.com/doily.dev' target='_blank' rel='noreferrer'>
                     <button><i class="fab fa-instagram"></i> Instagram</button>
                 </a>
+                <a href='https://twitter.com/doilydev' target='_blank' rel='noreferrer'>
+                    <button><i class="fab fa-twitter"></i> Twitter</button>
+                </a>
             </div>
         </div>
     )
