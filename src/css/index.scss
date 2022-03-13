@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+$background: white;
+$foreground: rgb(128, 145, 165);
+$accent: hotpink;
+
+body {
+  background: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  color: white;
+  background: black;
+  box-sizing: border-box;
+}
+
+.header-content {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+header img {
+  height: 60px;
+  height: 3rem;
+}
+
+header h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  margin: 0 10px;
+  font-size: 2.5rem;
+}
+
+header h2 {
+  font-family: 'Fredoka', sans-serif;
+  margin-left: 5px;
+  font-size: 2rem;
+  color: $accent;
+}
+
+main {
+  padding-top: 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $background;
+  width: 100vw;
+}
+
+.post {
+  height: 200px;
+  display: flex;
+  margin: 15px;
+  width: 1000px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background: $foreground;
+}
+
+.post:hover {
+  cursor: pointer;
+  background: $accent;
+}
+
+.post .image {
+  width: 250px;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-right: 2px solid black;
+}
+
+.post img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.post:hover img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.post h2 {
+  font-size: 2rem;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.post .text {
+  padding: 25px 35px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: $foreground;
+  font-size: 1.5rem;
+  font-family: 'Fredoka', sans-serif;
+
+  &:hover {
+    cursor: pointer;
+    background: $accent;
+  }
+}
+
+.blog-post {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: start;
+
+  h1 {
+    font-family: 'Fredoka', sans-serif;
+  }
+  
+  img {
+    width: 50%;
+    margin: 25px;
+    float: right;
+  }
+}
