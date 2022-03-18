@@ -6,12 +6,14 @@ export const Home = () => {
     return (
         <>
             <Header />
-            <div className='flex-col main'>
-                <div className='flex'>
-                    <img src={logo} className='logo-spin' alt='logo' />
+            <main>
+                <div className='flex-col splash'>
+                    <div className='flex'>
+                        <img src={logo} className='logo-spin' alt='logo' />
+                    </div>
                 </div>
-            </div>
-            <Footer />
+                <Footer />
+            </main>
         </>
     )
 }
