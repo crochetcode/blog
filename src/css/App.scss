@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 
-$primary: black;
-$secondary: rgb(106, 114, 130);
-$alt-text: white;
+$secondary: rgb(128, 145, 165);
+$accent: hotpink;
 
 body {
-  background: $primary;
+  background: black;
 }
 
 .flex, .flex-col {
@@ -20,7 +19,8 @@ body {
 }
 
 header {
-  background: $primary;
+  background: black;
+  color: white;
   height: 50px;
   position: fixed;
   top: 0;
@@ -28,29 +28,7 @@ header {
   box-sizing: border-box;
   align-items: center;
   padding: 0 50px;
-  color: $alt-text;
   z-index: 20;
-
-  nav {
-    position: fixed;
-    top: 50px;
-    height: calc(100vh - 50px);
-    width: 100%;
-    background: $primary;
-    border-top: solid white;
-
-    div {
-      padding-bottom: 100px;
-    }
-
-    h2 {
-      font-family: 'Fredoka', sans-serif;
-    }
-  }
-  
-  h2 {
-    font-family: 'Montserrat Alternates', sans-serif;
-  }
 
   i {
     position: absolute;
@@ -61,38 +39,67 @@ header {
       cursor: pointer;
     }
   }
-}
 
-footer {
-  background: $secondary;
-  height: 100px;
-  width: 100%;
-  position: relative; 
-  bottom: 0;
+  nav {
+    position: fixed;
+    top: 50px;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background: black;
+    border-top: solid white;
 
-  a {
-    font-size: 1.5rem;
-    margin: 0 4.5px;
-    background: $primary;
-    color: $alt-text;
-    padding: 15px;
-    height: 45px;
-    width: 47px;
-    border-radius: 50%;
-    box-sizing: border-box;
+    div {
+      p {
+        margin-bottom: 50px;
+      }
+    }
+
+    .links {
+      padding-bottom: 100px;
+    }
+
+    h2 {
+      font-family: 'Fredoka', sans-serif;
+    }
+
+    a {
+      font-size: 1rem;
+      margin: 0 4.5px;
+      background: black;
+      padding: 15px;
+      height: 35px;
+      width: 37px;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background: white;
+      color: black;
+
+      i {
+        position: relative;
+        left: 0;
+      }
+  
+      &:hover {
+        background: $accent;
+      }
+    }
+  }
+  
+  h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
   }
 }
 
 main {
   min-height: 100vh;
-  background: white;
+  background: rgb(128, 145, 165);
   width: 100%;
 }
 
 .splash {
   margin-top: 50px;
   box-sizing: border-box;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 100px);
 }
 
 .logo-spin {
