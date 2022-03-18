@@ -1,6 +1,5 @@
-import logo from '../assets/thread.svg';
+import logo from '../assets/thread.png';
 import { Header } from '../components/header';
-import { Footer } from '../components/footer';
 
 export const Home = () => {
     return (
@@ -12,7 +11,6 @@ export const Home = () => {
                         <img src={logo} className='logo-spin' alt='logo' />
                     </div>
                 </div>
-                <Footer />
             </main>
         </>
     )
