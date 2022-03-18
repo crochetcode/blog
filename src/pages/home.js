@@ -1,22 +1,19 @@
-import logo from '../assets/thread.png';
+import logo from '../assets/thread.svg';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
 
 export const Home = () => {
     return (
-        <div className='flex-col main'>
-            <div className='flex-col'>
-                <div className='flex'>
-                    <h1>DOILY DEV</h1>
+        <>
+            <Header />
+            <main>
+                <div className='flex-col splash'>
+                    <div className='flex'>
+                        <img src={logo} className='logo-spin' alt='logo' />
+                    </div>
                 </div>
-                <img src={logo} className='logo' alt='logo' />
-            </div>
-            <div>
-                <a href='https://github.com/crochetcode' target='_blank' rel='noreferrer'>
-                    <button><i class="fab fa-github"></i> Github</button>
-                </a>
-                <a href='https://www.instagram.com/doily.dev' target='_blank' rel='noreferrer'>
-                    <button><i class="fab fa-instagram"></i> Instagram</button>
-                </a>
-            </div>
-        </div>
+                <Footer />
+            </main>
+        </>
     )
 }
