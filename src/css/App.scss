@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 
 $secondary: rgb(128, 145, 165);
-$accent: hotpink;
 
 body {
   background: black;
@@ -80,7 +79,7 @@ header {
       }
   
       &:hover {
-        background: $accent;
+        color: $secondary;
       }
     }
   }
@@ -94,12 +93,18 @@ main {
   min-height: 100vh;
   background: rgb(128, 145, 165);
   width: 100%;
+  background-image: url('../assets/pins.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .splash {
   margin-top: 50px;
   box-sizing: border-box;
-  height: calc(100vh - 100px);
+  height: calc(100vh);
+  background: rgba(256, 256, 256, .65);
+  background: rgba(128, 145, 165, .85);
 }
 
 .logo-spin {
