@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 
+$primary: black;
+$secondary: rgb(106, 114, 130);
+$alt-text: white;
+
 body {
-  background: black;
+  background: $primary;
 }
 
 .flex, .flex-col {
@@ -15,29 +19,29 @@ body {
 }
 
 header {
-  background: black;
+  background: $primary;
   height: 50px;
   position: fixed;
   top: 0;
-  width: 100%;
-  justify-content: space-between;
+  width: 100vw;
   box-sizing: border-box;
+  align-items: center;
+  padding: 0 50px;
+  color: $alt-text;
   
   h2 {
     font-family: 'Montserrat Alternates', sans-serif;
-    color: white;
-    margin: 50px;
   }
 
   i {
-    color: white;
-    float: right;
+    position: absolute;
+    right: 50px;
   }
 }
 
 footer {
-  background: slategray;
   background: rgb(106, 114, 130);
+  background: $secondary;
   height: 100px;
   width: 100%;
   position: fixed; 
@@ -46,8 +50,8 @@ footer {
   a {
     font-size: 1.5rem;
     margin: 0 4.5px;
-    background: black;
-    color: white;
+    background: $primary;
+    color: $alt-text;
     padding: 15px;
     height: 45px;
     width: 47px;
