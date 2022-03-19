@@ -102,7 +102,7 @@ main {
   margin-top: 50px;
   box-sizing: border-box;
   height: calc(100vh);
-  background: rgba(128, 145, 165, .85);
+  background: rgba(128, 145, 165, .9);
 }
 
 .logo-spin {
@@ -117,6 +117,21 @@ h1, h2, p {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.words {
+  margin: 0 25px 25px 50px;
+  text-align: center;
+  max-width: 500px;
+
+  h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
 }
 
 @keyframes App-logo-spin {
