@@ -38,71 +38,95 @@ header {
       cursor: pointer;
     }
   }
-
-  nav {
-    position: fixed;
-    top: 50px;
-    height: calc(100vh - 50px);
-    width: 100%;
-    background: black;
-    border-top: solid white;
-
-    div {
-      p {
-        margin-bottom: 50px;
-      }
-    }
-
-    .links {
-      padding-bottom: 100px;
-    }
-
-    h2 {
-      font-family: 'Fredoka', sans-serif;
-    }
-
-    a {
-      font-size: 1rem;
-      margin: 0 4.5px;
-      background: black;
-      padding: 15px;
-      height: 35px;
-      width: 37px;
-      border-radius: 50%;
-      box-sizing: border-box;
-      background: white;
-      color: black;
-
-      i {
-        position: relative;
-        left: 0;
-      }
-  
-      &:hover {
-        color: $secondary;
-      }
-    }
-  }
   
   h2 {
     font-family: 'Montserrat Alternates', sans-serif;
   }
+
+  nav {
+    position: fixed;
+    top: 50px;
+    border-top: solid white;
+    height: calc(100vh - 50px);
+  }
+}
+
+nav {
+  width: 100%;
+  background: black;
+  box-sizing: border-box;
+
+  div {
+    p {
+      margin-bottom: 50px;
+    }
+  }
+
+  .links {
+    padding-bottom: 100px;
+  }
+
+  h2 {
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  a {
+    font-size: 1rem;
+    margin: 0 4.5px;
+    background: black;
+    padding: 15px;
+    height: 35px;
+    width: 37px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+
+    i {
+      position: relative;
+      left: 0;
+      right: 35px;
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}
+
+nav.splash {
+  background: black;
+  color: white;
+  min-height: calc(250px);
+  align-items: center;
+  box-sizing: border-box;
+
+  .links {
+    padding: 0;
+  }
+
 }
 
 main {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-image: url('../assets/pins.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  margin-top: 50px;
 }
 
 .splash {
-  margin-top: 50px;
+  max-width: 100%;
   box-sizing: border-box;
-  height: calc(100vh);
+  min-height: calc(100vh);
   background: rgba(128, 145, 165, .9);
+
+  h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+  }
 }
 
 .logo-spin {
@@ -124,13 +148,51 @@ a {
   text-align: center;
   max-width: 500px;
 
-  h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 3rem;
+  p {
+    font-size: 2rem;
+  }
+}
+
+.post-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.post {
+  border: 1px solid black;
+  background: white;
+  height: 200px;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 5px 0;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  background: rgba(0,0,0,.5);
+
+  .post-text {
+    padding: 25px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.25rem;
+  }
+
+  img {
+    height: 100%;
+    width: 175px;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-left: 1px solid black;
   }
 }
 
@@ -146,5 +208,27 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   .logo-spin {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (min-width: 800px){
+  .post-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .post {
+    width: 500px;
+    margin: 5px;
+
+    &:hover {
+      background: rgba(0,0,0,.25);
+      cursor: pointer;
+
+      img {
+        opacity: .75;
+      }
+    }
   }
 }
