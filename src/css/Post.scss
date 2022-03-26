@@ -41,11 +41,12 @@ $secondary: rgb(128, 145, 165);
     .post-page {
         margin: 75px auto;
         margin-bottom: 50px;
+        
+        img {
+            margin: 25px;
+            float: right;
+            max-width: 400px;
+        }
     }
 
-    img {
-        margin: 25px;
-        float: right;
-        max-width: 400px;
-    }
 }
