@@ -5,6 +5,13 @@ $secondary: rgb(128, 145, 165);
 
 body {
   background: black;
+  background-image: url('../assets/pins.jpg');
+  background-size: cover;
+}
+
+.cover {
+  background: rgba(128, 145, 165, 0.9);
+  width: 100vw;
 }
 
 .flex, .flex-col {
@@ -39,70 +46,111 @@ header {
     }
   }
 
+  h1 {
+    font-size: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  h2, h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+
+  h3 {
+    color: $secondary;
+    margin-left: 5px;
+  }
+
   nav {
     position: fixed;
     top: 50px;
-    height: calc(100vh - 50px);
-    width: 100%;
-    background: black;
     border-top: solid white;
+    height: calc(100vh - 50px);
+  }
+}
 
-    div {
-      p {
-        margin-bottom: 50px;
-      }
-    }
+.nav {
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
 
-    .links {
-      padding-bottom: 100px;
-    }
+nav {
+  width: 100%;
+  background: black;
+  box-sizing: border-box;
 
-    h2 {
-      font-family: 'Fredoka', sans-serif;
-    }
-
-    a {
-      font-size: 1rem;
-      margin: 0 4.5px;
-      background: black;
-      padding: 15px;
-      height: 35px;
-      width: 37px;
-      border-radius: 50%;
-      box-sizing: border-box;
-      background: white;
-      color: black;
-
-      i {
-        position: relative;
-        left: 0;
-      }
-  
-      &:hover {
-        color: $secondary;
-      }
+  div {
+    p {
+      margin-bottom: 50px;
     }
   }
-  
+
+  .links {
+    padding-bottom: 100px;
+  }
+
   h2 {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Fredoka', sans-serif;
   }
+
+  .social {
+    height: 35px;
+    border-radius: 50%;
+    width: 37px;
+    padding: 15px;
+    background: white;
+    color: black;
+    font-size: 1rem;
+    margin: 0 4.5px;
+    box-sizing: border-box;
+
+    &:hover {
+      background: $secondary;
+    }
+  }
+
+  a i {
+      position: relative;
+      left: 0;
+      right: 35px;
+      font-size: 1.5rem;
+  }
+}
+
+nav.splash {
+  background: black;
+  color: white;
+  min-height: calc(150px);
+  align-items: center;
+  box-sizing: border-box;
+
+  .links {
+    padding: 0;
+  }
+
 }
 
 main {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-image: url('../assets/pins.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  margin-top: 50px;
 }
 
 .splash {
-  margin-top: 50px;
+  max-width: 100%;
   box-sizing: border-box;
-  height: calc(100vh);
-  background: rgba(128, 145, 165, .9);
+  min-height: calc(100vh);
+  background: rgba(128, 145, 165, 0.9);
+
+  h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 3rem;
+  }
 }
 
 .logo-spin {
@@ -124,13 +172,54 @@ a {
   text-align: center;
   max-width: 500px;
 
-  h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 3rem;
+  p {
+    font-size: 2rem;
+  }
+}
+
+.post-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.post-preview {
+  // border: 1px solid black;
+  background: white;
+  height: 200px;
+  width: calc(100vw - 20px);
+  box-sizing: border-box;
+  margin: 5px;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  background: rgba(0,0,0,.25);
+  border-radius: 25px;
+  overflow: hidden;
+
+  .post-text {
+    padding: 25px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.25rem;
+  }
+
+  img {
+    height: 100%;
+    width: 175px;
+    object-fit: cover;
+    box-sizing: border-box;
+    // border-left: 1px solid black;
+    // border: 1px solid black;
   }
 }
 
@@ -146,5 +235,41 @@ a {
 @media (prefers-reduced-motion: no-preference) {
   .logo-spin {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media (min-width: 600px){
+  .post-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .post-preview {
+    width: 450px;
+    margin: 5px;
+    // border: none;
+    overflow: hidden;
+    // border-radius: 25px;
+
+    img {
+      width: 215px;
+    }
+
+    &:hover {
+      background: rgba(0,0,0,.3);
+      cursor: pointer;
+      // border-radius: 25px;
+
+      img {
+        transform: scale(1.05);
+
+      }
+    }
+  }
+
+  header h2:hover {
+      cursor: pointer;
+      color: $secondary;
   }
 }
