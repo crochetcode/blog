@@ -8,6 +8,7 @@ $secondary: rgb(128, 145, 165);
     padding: 50px 0;
     text-align: justify;
     max-width: 800px;
+    min-height: 400px;
     
     img {
         width: 100%;
@@ -45,10 +46,17 @@ figcaption {
     font-style: italic;
 }
 
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background:rgba(128, 145, 165, .5);
+    padding: 1px 5px;
+}
+
 @media (min-width: 600px){
     .post-page {
         margin: 100px auto;
-        margin-bottom: 50px;
+        margin-bottom: 150px;
         border-radius: 25px;
         
         figure {

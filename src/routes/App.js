@@ -3,6 +3,7 @@ import '../css/Post.scss';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/home';
 import { About } from '../pages/posts/about';
+import { Stack } from '../pages/posts/stack';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='*' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/blog/stack' element={<Stack />} />
       </Routes>
     </div>
   );

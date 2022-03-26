@@ -2,8 +2,14 @@ import logo from '../assets/thread.png';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 import { Link } from 'react-router-dom';
+import { postPreviews } from '../constants/post-previews';
 
 export const Home = () => {
+    window.scroll({
+        top: 0,
+        left: 0
+    });
+
     return (
         <>
             <Header />
@@ -15,16 +21,21 @@ export const Home = () => {
                     <img src={logo} className='logo-spin' alt='logo' />
                 </div>
                 <div className='flex-col splash'>
-                    <h1>about</h1>
+                    <h1>recent posts</h1>
                     <div className="post-container">
-                        <Link to='/about'>
-                            <div className="post-preview">
-                                <div className="post-text">
-                                    <p>Hi! I'm Fred.</p>
-                                </div>
-                                <img src='https://i.pinimg.com/originals/fe/8f/7d/fe8f7df7be0dbfa73add9cfbc1cf8cad.jpg' alt="" />
-                            </div>
-                        </Link>
+                        {postPreviews.map(postPreview => {
+                            return (
+                                <Link to={postPreview.link}>
+                                    <div className="post-preview">
+                                        <div className="post-text">
+                                            <h2>{postPreview.h2}</h2>
+                                            <p>{postPreview.p}</p>
+                                        </div>
+                                        <img src={postPreview.img} alt="" />
+                                    </div>
+                                </Link>
+                                )
+                        })}
                     </div>
                 </div>
                 <Footer />
