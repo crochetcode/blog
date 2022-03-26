@@ -1,17 +1,19 @@
 import { useState } from 'react';
 
-export const Header = () => {
+export const Header = props => {
     const [menu, showMenu] = useState(false);
 
     return (
         <header className='flex'>
             <h2>DOILY DEV</h2>
+            {props.subtitle && <h3>{props.subtitle}</h3>}
             {!menu && <i className='fa-solid fa-bars' onClick={() => showMenu(true)}></i>}
             {menu && <i class='fa-solid fa-xmark' onClick={() => showMenu(false)}></i>}
             {menu && <nav className='flex-col'>
-                <div className='flex-col'>
-                    <h2>👋👋 hi! 👋👋</h2>
-                    <p>more coming soon</p>
+                <div className='flex-col nav'>
+                    <h2>home</h2>
+                    <h2>about</h2>
+                    <h2>blog</h2>
                 </div>
                 <div className='flex links'>
                     <a href='https://github.com/crochetcode' target='_blank' rel='noreferrer' className='flex'>

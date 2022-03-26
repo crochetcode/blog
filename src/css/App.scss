@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 
+$secondary: rgb(247, 0, 255);
 $secondary: rgb(128, 145, 165);
 
 body {
   background: black;
+  background-image: url('../assets/pins.jpg');
+  background-size: cover;
+  // background-attachment: fixed;
+}
+
+.cover {
+  background: rgba(128, 145, 165, 0.9);
+  width: 100vw;
 }
 
 .flex, .flex-col {
@@ -43,12 +52,22 @@ header {
     font-family: 'Montserrat Alternates', sans-serif;
   }
 
+  h3 {
+    color: $secondary;
+    margin-left: 5px;
+  }
+
   nav {
     position: fixed;
     top: 50px;
     border-top: solid white;
     height: calc(100vh - 50px);
   }
+}
+
+.nav {
+  margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 nav {
@@ -90,7 +109,7 @@ nav {
     }
 
     &:hover {
-      color: $secondary;
+      background: $secondary;
     }
   }
 }
@@ -98,7 +117,7 @@ nav {
 nav.splash {
   background: black;
   color: white;
-  min-height: calc(250px);
+  min-height: calc(150px);
   align-items: center;
   box-sizing: border-box;
 
@@ -122,6 +141,9 @@ main {
   box-sizing: border-box;
   min-height: calc(100vh);
   background: rgba(128, 145, 165, .9);
+  background: rgb(255, 71, 0, .85);
+  background: rgba(247, 0, 255, 0.85);
+  background: rgba(128, 145, 165, 0.9);
 
   h1 {
     font-family: 'Montserrat Alternates', sans-serif;
@@ -172,7 +194,7 @@ a {
   display: flex;
   align-items: flex-start;
   align-items: center;
-  background: rgba(0,0,0,.5);
+  background: rgba(0,0,0,.25);
 
   .post-text {
     padding: 25px;
@@ -211,7 +233,7 @@ a {
   }
 }
 
-@media (min-width: 800px){
+@media (min-width: 600px){
   .post-container {
     display: flex;
     flex-wrap: wrap;
@@ -223,12 +245,17 @@ a {
     margin: 5px;
 
     &:hover {
-      background: rgba(0,0,0,.25);
+      background: rgba(0,0,0,.5);
       cursor: pointer;
 
       img {
         opacity: .75;
       }
     }
+  }
+
+  header h2:hover {
+      cursor: pointer;
+      color: $secondary;
   }
 }

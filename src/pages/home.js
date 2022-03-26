@@ -8,7 +8,8 @@ export const Home = () => {
             <main>
                 <div className='flex-col splash'>
                     <div className='flex-col words'>
-                        <h1>personal site of a junior developer</h1>
+                        <h1>musings of a junior developer</h1>
+                        {/* <p>and a smattering of side projects</p> */}
                     </div>
                     <img src={logo} className='logo-spin' alt='logo' />
                 </div>
@@ -45,7 +46,7 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-                <nav className='flex-col splash'>
+                {/* <nav className='flex-col splash'>
                     <div className='flex-col'>
                         <h2>👋👋 hi! 👋👋</h2>
                         <p>more coming soon</p>
@@ -61,7 +62,7 @@ export const Home = () => {
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
-                </nav>
+                </nav> */}
             </main>
         </>
     )
