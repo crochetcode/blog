@@ -15,37 +15,50 @@ $secondary: rgb(128, 145, 165);
     
     .text {
         padding: 25px;
-        
-
     }
 
     h1 {
         font-family: 'Fredoka', sans-serif;
         margin-bottom: .5rem;
-        color: $secondary;
     }
 
     h2 {
         font-family: 'Fredoka', sans-serif;
         font-size: 1.25rem;
-        color: $secondary;
         margin-top: 1rem;
     }
 
     p {
         margin-bottom: .5rem;
     }
+
+    a {
+        color: $secondary;
+    }
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
 }
 
 @media (min-width: 600px){
     .post-page {
-        margin: 75px auto;
+        margin: 100px auto;
         margin-bottom: 50px;
+        border-radius: 25px;
         
-        img {
+        figure {
             margin: 25px;
             float: right;
             max-width: 400px;
+        }
+        
+        a:hover {
+            text-decoration: underline;
         }
     }
 

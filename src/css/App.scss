@@ -145,9 +145,6 @@ main {
   max-width: 100%;
   box-sizing: border-box;
   min-height: calc(100vh);
-  background: rgba(128, 145, 165, .9);
-  background: rgb(255, 71, 0, .85);
-  background: rgba(247, 0, 255, 0.85);
   background: rgba(128, 145, 165, 0.9);
 
   h1 {
@@ -188,8 +185,8 @@ a {
   margin: 25px 0;
 }
 
-.post {
-  border: 1px solid black;
+.post-preview {
+  // border: 1px solid black;
   background: white;
   height: 200px;
   width: calc(100vw - 20px);
@@ -200,6 +197,8 @@ a {
   align-items: flex-start;
   align-items: center;
   background: rgba(0,0,0,.25);
+  border-radius: 25px;
+  overflow: hidden;
 
   .post-text {
     padding: 25px;
@@ -219,7 +218,8 @@ a {
     width: 175px;
     object-fit: cover;
     box-sizing: border-box;
-    border-left: 1px solid black;
+    // border-left: 1px solid black;
+    // border: 1px solid black;
   }
 }
 
@@ -245,16 +245,25 @@ a {
     width: 100%;
   }
 
-  .post {
+  .post-preview {
     width: 450px;
     margin: 5px;
+    // border: none;
+    overflow: hidden;
+    // border-radius: 25px;
+
+    img {
+      width: 215px;
+    }
 
     &:hover {
-      background: rgba(0,0,0,.5);
+      background: rgba(0,0,0,.3);
       cursor: pointer;
+      // border-radius: 25px;
 
       img {
-        opacity: .75;
+        transform: scale(1.05);
+
       }
     }
   }
