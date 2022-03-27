@@ -49,8 +49,9 @@ figcaption {
 .code {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    background:rgba(128, 145, 165, .5);
+    background:rgba(128, 145, 165, .25);
     padding: 1px 5px;
+    margin-left: 25px;
 }
 
 @media (min-width: 600px){
