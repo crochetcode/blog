@@ -10,7 +10,7 @@ export const Stack = () => {
         left: 0
     });
 
-    const title = 'stack and tools';
+    const title = 'what I used to make this blog';
 
     return (
         <div className='flex-col'>
@@ -41,17 +41,17 @@ export const Stack = () => {
                         <p>Two features that I really enjoy are the ability to assign variables (such as commonly used colors) and the ability to nest CSS which makes it a easier to organize and group CSS elements.</p>
                         <p>At work we use components derived from Bootstrap with some splashes of SASS. For learning purposes, I try to use as much pure CSS styling as I can.</p>
                         <h2>Visual Studio Code</h2>
-                        <p>For my IDE (integrated development environment), the place where I write my code, I use Visual Studio Code, a free tool by Microsoft. It is the tool I learned to code on and find the free version is very robust with a lot of plugins and features available.</p>
+                        <p>For my IDE (integrated development environment), the place where I write my code, I use Visual Studio Code, a free tool by Microsoft. It is the IDE on which I learned to code and I find the free version is very robust with a lot of plugins and features available.</p>
                         <p>At work I use a licensed version of IntelliJ; it is particularly useful when coding in Java. I also really like a lot of the testing and debugging tools it has. I am eventually planning to shift over to using the community version of IntelliJ more at home as I think it would be a good way to practice shortcuts and explore advanced features.</p>
                         <h2>Github</h2>
                         <p>Version control is essential to any coding project. Think of it as having a place to save your work. It also allows multiple people to coordinate on the same code base.</p>
                         <p>At work I use both GitHub and BitBucket. I prefer GitHub - it's that what I use for all my personal projects. You can view the code for this project <a href='https://github.com/crochetcode/doily-dev' target='_blank' rel='noreferrer'>here</a>.</p>
                         <h2>Digital Ocean</h2>
-                        <p>This app is hosted through Digital Ocean. At the bootcamp I attended we completed both a personal and group project at the end of the course - neither project was considered completed until it was hosted on the internet.</p>
+                        <p>This app is hosted through Digital Ocean. At the bootcamp I attended we completed personal and group projects towards the end of the course - neither project was considered complete until it was hosted on the internet.</p>
                         <p>At the time, I found hosting almost harder than writing the code itself but am looking to grow in my knowledge of deploying code. For this app, I am currently doing manual deployments but hope to move to more automated pipeline as this app evolves.</p>
-                        <p>For those curious it costs about $10 bucks a month to host this app (and I can use the same plan to host other sites as well). There are also cheaper tiers available.</p>
+                        <p>For those curious, it costs about $10/month to host this app (and I can use the same plan to host other sites as well). There are also cheaper tiers available.</p>
                         <h2>Google domains</h2>
-                        <p>You can find domains for pretty cheap. I pay $12 bucks a year for the doily.dev domain. It simply slaps a pretty URL name over where my website is hosted; otherwise, you would have to visit my website at 68.183.22.2:3002.</p>
+                        <p>You can find domains for pretty cheap. I pay $12/year for the doily.dev domain. It simply slaps a pretty URL name over where my website is hosted; otherwise, you would have to visit my website at 68.183.22.2:3002.</p>
                         <br />
                         <p>I currently don't have a database set up with this app. As the blog grows and expands that might be added later.</p>
                     </div>

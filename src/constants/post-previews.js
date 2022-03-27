@@ -3,9 +3,9 @@ import happyDev from '../assets/post-imgs/happy-dev.jpeg';
 
 export const postPreviews = [
     {
-        link: '/blog/stack',
-        h2: 'stack and tools',
-        p: 'What I used to make this site',
+        link: '/blog/03-26-22',
+        h2: 'what I used to make this blog',
+        p: 'app guts and dev tools',
         img: react,
         date: 'March 26th, 2022'
     },
