@@ -28,6 +28,8 @@ export const Home = () => {
                                 <Link to={postPreview.link}>
                                     <div className="post-preview">
                                         <div className="post-text">
+                                            <p className='date'>{postPreview.date}</p>
+                                            <br />
                                             <h2>{postPreview.h2}</h2>
                                             <p>{postPreview.p}</p>
                                         </div>

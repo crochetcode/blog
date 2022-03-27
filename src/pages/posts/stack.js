@@ -22,6 +22,7 @@ export const Stack = () => {
                         <figcaption>This app uses the React.js framework</figcaption>
                     </figure>
                     <div className='text'>
+                        <p className='date'>March 26th, 2022</p>
                         <h1>{title}</h1>
                         <p>One of the best things about being a developer is getting to pick and choose the tools you use. It's amazing how many great resources are available for free.</p>
                         <p>I do my coding on a MacBook. Here are some of the important ingredients of this app as well as tools I use when coding it.</p>
@@ -30,8 +31,8 @@ export const Stack = () => {
                         <p>I can add a basic button with HTML, change the color and font-size with CSS, but it is Javascript that makes something happen when you click the button.</p>
                         <p>Javascript was the coding language I learned first. At work I also use Java and some Typescript.</p>
                         <h2>React.js</h2>
-                        <p>React is a Javascript framework, created by Facebook around 2011, that makes it easy to spin up a website quickly. Most of my home projects start by simply running</p> 
-                        <p> <span className='code'>npx create-react-app {'<app-name>'}</span></p> 
+                        <p>React is a Javascript framework, created by Facebook around 2011, that makes it easy to spin up a website quickly. Most of my home projects start by simply running</p>
+                        <p> <span className='code'>npx create-react-app {'<app-name>'}</span></p>
                         <p>in the terminal.</p>
                         <p>I like how React does a lot of the set up for you. Using JSX (JavaScript Syntax Extension) makes it easy to blend HTML and Javascript together.</p>
                         <p>React was a big part of the curriculum at the coding bootcamp I attended. I also use React at work for Javascript projects (most of our work).</p>
@@ -59,19 +60,21 @@ export const Stack = () => {
                     <h1>more</h1>
                     <div className='post-container'>
                         {postPreviews.filter(postPreview => postPreview.h2 !== title)
-                        .map(postPreview => {
-                            return (
-                                <Link to={postPreview.link}>
-                                <div className="post-preview">
-                                    <div className="post-text">
-                                        <h2>{postPreview.h2}</h2>
-                                        <p>{postPreview.p}</p>
-                                    </div>
-                                    <img src={postPreview.img} alt="" />
-                                </div>
-                            </Link>
-                            )
-                        })}
+                            .map(postPreview => {
+                                return (
+                                    <Link to={postPreview.link}>
+                                        <div className="post-preview">
+                                            <div className="post-text">
+                                                <p className='date'>{postPreview.date}</p>
+                                                <br />
+                                                <h2>{postPreview.h2}</h2>
+                                                <p>{postPreview.p}</p>
+                                            </div>
+                                            <img src={postPreview.img} alt="" />
+                                        </div>
+                                    </Link>
+                                )
+                            })}
                     </div>
                 </div>
             </div>

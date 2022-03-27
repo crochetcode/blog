@@ -20,6 +20,7 @@ export const About = () => {
                         <figcaption>Just another day at the office</figcaption>
                     </figure>
                     <div className="text">
+                        <p className='date'>March 25th, 2022</p>
                         <h1>about</h1>
                         <p>Hi! I'm Fred.</p>
                         <p>A couple of years ago, I switched from working in a railyard to starting a career as a software engineer.</p>
@@ -36,20 +37,22 @@ export const About = () => {
                 <div className='flex-col'>
                     <h1>more</h1>
                     <div className="post-container">
-                    {postPreviews.filter(postPreview => postPreview.h2 !== 'about')
-                        .map(postPreview => {
-                            return (
-                                <Link to={postPreview.link}>
-                                <div className="post-preview">
-                                    <div className="post-text">
-                                        <h2>{postPreview.h2}</h2>
-                                        <p>{postPreview.p}</p>
-                                    </div>
-                                    <img src={postPreview.img} alt="" />
-                                </div>
-                            </Link>
-                            )
-                        })}
+                        {postPreviews.filter(postPreview => postPreview.h2 !== 'about')
+                            .map(postPreview => {
+                                return (
+                                    <Link to={postPreview.link}>
+                                        <div className="post-preview">
+                                            <div className="post-text">
+                                                <p className='date'>{postPreview.date}</p>
+                                                <br />
+                                                <h2>{postPreview.h2}</h2>
+                                                <p>{postPreview.p}</p>
+                                            </div>
+                                            <img src={postPreview.img} alt="" />
+                                        </div>
+                                    </Link>
+                                )
+                            })}
                     </div>
                 </div>
             </div>

@@ -20,7 +20,8 @@ $secondary: rgb(128, 145, 165);
 
     h1 {
         font-family: 'Fredoka', sans-serif;
-        margin-bottom: .5rem;
+        font-size: 2.5rem;
+        // margin-bottom: .5rem;
     }
 
     h2 {
@@ -57,7 +58,6 @@ figcaption {
 @media (min-width: 600px){
     .post-page {
         margin: 100px auto;
-        margin-bottom: 150px;
         border-radius: 25px;
         
         figure {
