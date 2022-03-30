@@ -7,6 +7,9 @@ body {
   background: black;
   background-image: url('../assets/pins.jpg');
   background-size: cover;
+  background-image: url('../assets/pins.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .cover {
@@ -135,9 +138,6 @@ nav.splash {
 main {
   min-height: 100vh;
   width: 100vw;
-  background-image: url('../assets/pins.jpg');
-  background-size: cover;
-  background-attachment: fixed;
   margin-top: 50px;
 }
 
