@@ -19,9 +19,6 @@ export const Header = () => {
                     <Link onClick={() => showMenu(false)} to='/about'>
                         <h2>about</h2>
                     </Link>
-                    {/* <Link onClick={() => showMenu(false)} to='/blog'>
-                        <h2>blog</h2>
-                    </Link> */}
                 </div>
                 <div className='flex links'>
                     <a href='https://github.com/crochetcode' target='_blank' rel='noreferrer' className='flex social'>
