@@ -1,8 +1,7 @@
-import logo from '../assets/thread.png';
-import { Link } from 'react-router-dom';
-import { postPreviews } from '../constants/post-previews';
+import { Link } from "react-router-dom"
+import { postPreviews } from "../constants/post-previews"
 
-export const Home = () => {
+export const Post = props => {
     window.scroll({
         top: 0,
         left: 0
@@ -10,16 +9,13 @@ export const Home = () => {
 
     return (
         <>
-            <div className='flex-col page'>
-                <div className='flex-col'>
-                    <h1>musings of a junior developer</h1>
-                </div>
-                <img src={logo} className='logo-spin' alt='logo' />
+            <div className='post'>
+                {props.postContent}
             </div>
-            <div className='tall flex-col'>
-                <h1>recent posts</h1>
-                <div className="preview-container">
+            <h1>more posts</h1>
+            <div className="preview-container">
                 {postPreviews
+                    .filter(postPreview => postPreview.id !== props.id)
                     .map(postPreview => {
                         return (
                             <Link to={postPreview.link}>
@@ -35,7 +31,6 @@ export const Home = () => {
                             </Link>
                         )
                     })}
-                </div>
             </div>
         </>
     )
