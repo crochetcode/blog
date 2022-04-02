@@ -1,20 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export const Header = props => {
+export const Header = () => {
     const [menu, showMenu] = useState(false);
 
     return (
         <header className='flex'>
-            {props.subtitle ?
-                <>
-                    <Link to='/'>
-                        <h2>DOILY DEV</h2>
-                    </Link>
-                    <h3>{props.subtitle}</h3>
-                </> :
+            <Link to='/'>
                 <h1 onClick={() => showMenu(false)}>DOILY DEV</h1>
-            }
+            </Link>
             {!menu && <i className='fa-solid fa-bars' onClick={() => showMenu(true)}></i>}
             {menu && <i class='fa-solid fa-xmark' onClick={() => showMenu(false)}></i>}
             {menu && <nav className='flex-col'>
