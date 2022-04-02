@@ -14,7 +14,7 @@ export const postPreviews = [
         id: 1,
         link: '/about',
         h2: 'about',
-        p: 'Hi! I\'m Fred!',
+        p: 'hi! I\'m Fred',
         img: happyDev,
         date: 'March 25th, 2022'
     }
