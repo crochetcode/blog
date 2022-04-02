@@ -82,10 +82,6 @@ nav {
         font-size: 1rem;
         margin: 0 4.5px;
         box-sizing: border-box;
-
-        &:hover {
-            background: $secondary;
-        }
     }
 
     a i {
@@ -108,6 +104,10 @@ nav.splash {
     }
 }
 
-footer {
-    border: solid red;
+@media (min-width: 600px) {
+    .social {
+        &:hover {
+            background: $secondary;
+        }
+    }
 }
