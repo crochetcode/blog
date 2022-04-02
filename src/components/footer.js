@@ -1,7 +1,14 @@
+import { Link } from 'react-router-dom'
+
 export const Footer = () => {
     return (
-        <nav className='flex-col splash'>
+        <nav className='flex splash'>
             <div className='flex links'>
+                <Link to='/'>
+                <div className='flex social' onClick={() => window.scrollTo(0, 0)}>
+                <i class="fa-solid fa-house"></i>
+                </div>
+                </Link>
                 <a href='https://github.com/crochetcode' target='_blank' rel='noreferrer' className='flex social'>
                     <i class="fab fa-github"></i>
                 </a>

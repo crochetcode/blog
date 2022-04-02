@@ -111,6 +111,14 @@ body {
   }
 }
 
+.code {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  background:rgba(128, 145, 165, .25);
+  padding: 5px;
+  font-size: .8rem;
+}
+
 .logo-spin {
   height: 75vw;
   max-height: 350px;
