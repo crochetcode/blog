@@ -3,12 +3,13 @@
 
 body {
   background: black;
-  background-image: url('../assets/pins.jpg');
+  background-image: url("../assets/pins.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
-.flex, .flex-col {
+.flex,
+.flex-col {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,7 @@ body {
 }
 
 .container {
-  background: rgba(128, 145, 165, 0.9);
+  background: linear-gradient(15deg, rgba(0, 0, 189, 0.9), rgba(255, 105, 180, 0.9));
   width: 100%;
   text-align: center;
   display: flex;
@@ -33,11 +34,13 @@ body {
   align-items: center;
   padding: 50px 0;
   box-sizing: border-box;
+  padding-top: 100px;
 
   h1 {
     font-family: "Fredoka", sans-serif;
     font-size: 3rem;
     margin-bottom: 0.5rem;
+    max-width: 300px;
   }
 }
 
@@ -94,6 +97,7 @@ body {
   border-radius: 25px;
   overflow: hidden;
   text-align: left;
+  color: white;
 
   .preview-text {
     padding: 10px;
@@ -112,11 +116,11 @@ body {
 }
 
 .code {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-weight: bold;
-  background:rgba(128, 145, 165, .25);
+  background: rgba(128, 145, 165, 0.25);
   padding: 5px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .logo-spin {
@@ -126,10 +130,6 @@ body {
 }
 
 @media (min-width: 600px) {
-  .container {
-    padding-top: 100px;
-  }
-
   .post {
     border-radius: 25px;
     padding: 50px;
@@ -160,7 +160,7 @@ body {
       height: 100%;
       object-fit: cover;
       width: 250px;
-      opacity: 0.5;
+      opacity: 0.75;
       z-index: 5;
     }
 
@@ -179,7 +179,7 @@ body {
 
       img {
         transform: scale(1.05);
-        opacity: 0.8;
+        opacity: 0.85;
       }
     }
   }
