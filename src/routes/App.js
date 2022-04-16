@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/home';
 import { about } from '../pages/posts/about';
 import { stack } from '../pages/posts/stack';
+import { mobile } from '../pages/posts/mobile';
 import { Post } from '../components/post';
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
@@ -18,6 +19,7 @@ function App() {
         <Route path='*' element={<Home />} />
         <Route path='/about' element={<Post postContent={about} id={1}/>} />
         <Route path='/blog/03-26-22' element={<Post postContent={stack} id={2} />} />
+        <Route path='/blog/04-16-22' element={<Post postContent={mobile} id={3} />} />
       </Routes>
       </div>
       <Footer/>

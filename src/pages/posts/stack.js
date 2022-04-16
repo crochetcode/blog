@@ -17,7 +17,7 @@ export const stack = (
             <p>Javascript was the coding language I learned first. At work I also use Java and some Typescript.</p>
             <h2>React.js</h2>
             <p>React is a Javascript framework, created by Facebook around 2011, that makes it easy to spin up a website quickly. Most of my home projects start by simply running</p>
-            <p> <span className='code'>npx create-react-app {'<app-name>'}</span></p>
+            <div className='code-block'>npx create-react-app {'<app-name>'}</div>
             <p>in the terminal.</p>
             <p>I like how React does a lot of the set up for you. Using JSX (JavaScript Syntax Extension) makes it easy to blend HTML and Javascript together.</p>
             <p>React was a big part of the curriculum at the coding bootcamp I attended. I also use React at work for Javascript projects (most of our work).</p>
