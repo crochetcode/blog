@@ -12,7 +12,7 @@ export const Home = () => {
         <>
             <div className='flex-col page'>
                 <div className='flex-col'>
-                    <h1>musings of a junior developer</h1>
+                    <h1>musings of a (somewhat) new developer</h1>
                 </div>
                 <img src={logo} className='logo-spin' alt='logo' />
             </div>
