@@ -14,7 +14,6 @@ export const about = (
             <h2>About the blog</h2>
             <p>I learned to code from a 3-month web developer bootcamp course. I really enjoyed the fast-paced learning and hands-on projects; I'm hoping to recapture some of that energy here.</p>
             <p>At first, this blog will probably be mostly for me - a fun side project where I can try out different technologies and designs and get some experience keeping code maintainable.</p>
-
             <p>But perhaps one day it might be something worth sharing with others too. I find a lot of the how-tos out there to be a little on the technical side; I will try to keep the posts here bite-sized and straight-forward.</p>
             <h2>Why doily dev?</h2>
             <p>I occasionally crochet. When I do I'm partial to making small doilies - you can see blurry pictures of them on <a href='https://www.instagram.com/doily.dev' target='_blank' rel='noreferrer'>my Instagram</a>.</p>
