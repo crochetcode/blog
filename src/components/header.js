@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 
 export const Header = () => {
     const [menu, showMenu] = useState(false);
+    const headerClass = `flex ${menu && 'no-scroll'}`
+    const navClass = `flex-col ${menu && 'no-scroll'}`
 
     return (
-        <header className='flex'>
+        <header className={headerClass}>
             <Link to='/'>
                 <h1 onClick={() => showMenu(false)}>DOILY DEV</h1>
             </Link>
             {!menu && <i className='fa-solid fa-bars' onClick={() => showMenu(true)}></i>}
-            {menu && <i class='fa-solid fa-xmark' onClick={() => showMenu(false)}></i>}
-            {menu && <nav className='flex-col'>
+            {menu && <i className='fa-solid fa-xmark' onClick={() => showMenu(false)}></i>}
+            {menu && <nav className={navClass}>
                 <div className='flex-col nav'>
                     <Link onClick={() => showMenu(false)} to='/'>
                         <h2>home</h2>
